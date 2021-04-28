@@ -1,29 +1,19 @@
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
 
-class Database {
-
+class DataBase {
     constructor() {
-       
-        this.mongoDataBase() 
+        this.mongoDataBase();
     }
-
-    
     mongoDataBase() {
         mongoose.connect('mongodb://localhost/react', {
             useNewUrlParser: true,
-            useUnifiedTopology: true,
-            useFindAndModify: false,
-            useCreateIndex: true
+            useUnifiedTopology: true
         }).then(() => {
-            console.log(" Conexão realizada com sucesso! ")
+            console.log("Conexão com MongoDb realizado com sucesso!");
         }).catch((erro) => {
-            console.log(" Conexão não foi realizada!" + erro)
+            console.log("Erro: Conexão com MongoDb não foi realizado com sucesso: " + erro);
         });
-
     }
-
-
 }
 
-export default new Database()
-
+export default new DataBase();

@@ -17,7 +17,7 @@ npm rum dev
 npm install
 
 //Instalar o MongoDB
-npm -install --save mongodb
+npm install --save mongodb
 
-//Instalar Mongoose traduz os dados para objetos JavaScript para que possam ser usados na aplicação
+//Instalar o Mongoose - Mongoose traduz os dados do banco de dados para objetos JavaScript para que possam ser utilizados por sua aplicação.
 npm install --save mongoose

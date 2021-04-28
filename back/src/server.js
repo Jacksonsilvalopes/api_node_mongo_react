@@ -1,6 +1,6 @@
 //const app = require('./app');
 import app from './app';
 
-app.listen(4200, () => {
-    console.log("Servidor iniciado na porta 4200");
+app.listen(3000, () => {
+    console.log("Servidor iniciado na porta 8080");
 });
