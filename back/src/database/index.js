@@ -5,14 +5,14 @@ class DataBase {
         this.mongoDataBase();
     }
     mongoDataBase() {
-        mongoose.connect('mongodb://localhost/react', {
+        this.mongoDBConnection = mongoose.connect('mongodb://localhost/react', {
             useNewUrlParser: true,
             useUnifiedTopology: true
         }).then(() => {
-            console.log("Conexão com MongoDb realizado com sucesso!");
+            console.log("Conexão com MongoDB realizada com sucesso!")
         }).catch((erro) => {
-            console.log("Erro: Conexão com MongoDb não foi realizado com sucesso: " + erro);
-        });
+            console.log("Erro: Conexão com MongoDB não foi realizado com sucesso: " + erro)
+        })
     }
 }
 
